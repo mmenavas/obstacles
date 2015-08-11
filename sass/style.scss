@@ -1,0 +1,70 @@
+// Screen
+// ======
+
+@import "normalize";
+@import "grids";
+
+.canvas {
+  height: 200px;
+  width: 100%;
+  background-color: #000;
+  position:relative;
+}
+.lane {
+  height:48px;
+  border-top:1px solid #333;
+  border-bottom:1px solid #333;
+}
+#obstacle-0,
+#obstacle-1,
+#obstacle-2,
+#obstacle-3 {
+  background-color: #666;
+  height:44px;
+  width:44px;
+  border:1px solid #999;
+  border-radius:50%;
+  position: absolute;
+  right:0;
+  &.speed-0 {
+    transition: .75s;
+    right:594px;
+  }
+  &.speed-1 {
+    transition: 1s;
+    right:594px;
+  }
+  &.speed-2 {
+    transition: 1.25s;
+    right:594px;
+  }
+  &.speed-3 {
+    transition: 1.5s;
+    right:594px;
+  }
+}
+#subject {
+  font-size:50px;
+  line-height:25px;
+  color:#ccc;
+  position:absolute;
+  transition: 0.5s;
+  top:0;
+  left:20px;
+  &.row-0 {
+    top:0;
+  }
+  &.row-1 {
+    top:50px;
+  }
+  &.row-2 {
+    top:100px;
+  }
+  &.row-3 {
+    top:150px;
+  }
+
+}
+footer {
+  margin-top: 10px;
+}
